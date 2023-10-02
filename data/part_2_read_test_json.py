@@ -19,7 +19,7 @@ def make_game_library_from_json( json_data ):
 
 
 #Part 2
-input_json_file = "data/test_data.json"
+input_json_file = "test_data.json"
 
 ### Begin Add Code Here ###
 #Open the file specified by input_json_file

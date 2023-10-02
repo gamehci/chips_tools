@@ -1,0 +1,29 @@
+{
+    "title": "alicia's game shelf",
+    "games": [
+        {
+            "title": "Chip's Challenge",
+            "year": "1989",
+            "platform": {
+                "launch_year": 1981,
+                "name": "Atari Lynx"
+            }
+        },
+        {
+            "title": "Chip's Challenge 2",
+            "year": "2003",
+            "platform": {
+                "launch_year": 2003,
+                "name": "Steam"
+            }
+        },
+        {
+            "title": "Halo",
+            "year": "2012",
+            "platform": {
+                "launch_year": 2012,
+                "name": "Xbox"
+            }
+        }
+    ]
+}
