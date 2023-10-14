@@ -1,3 +1,4 @@
+
 import json
 import cc_dat_utils
 import cc_classes
@@ -12,17 +13,25 @@ with open("alicia_level.json", "r") as json_file:
 print(level_pack_data)
 
 #make me in memory cc level pack (empty) 빈 레벨이지만 파이썬 메모리에 존재함.
-# 레벨을 만들어라 빈 레벨 팩에 다 준비한 후 dat에 넣을 것.
+# create an in-memory CC level pack (empty)
 level_pack = cc_classes.CCLevelPack()
+
+#create a new level
 level1 = cc_classes.CCLevel()
-level1.level_number = level_pack_data["level1"]["level_number"]
-level1.time = level_pack_data["level1"]["time"]
-level1.num_chips = level_pack_data["level1"]["num_chips"]
-level1.upper_layer = level_pack_data["level1"]["upper_layer"]
-level1.lower_layer = level_pack_data["level1"]["lower_layer"]
 
+#extract data for level1 from json
+level1_data = level_pack_data["level1"]
 
-level1.optional_fields.append(level1["Encoded Password Field"])
+#assign properties to level1
+level1.level_number = level1_data["level_number"]
+level1.time = level1_data["time"]
+level1.num_chips = level1_data["num_chips"]
+level1.upper_layer = level1_data["upper_layer"]
+level1.lower_layer = level1_data["lower_layer"]
+#IT WORKED!! NO ERRORS
+
+#
+
 
 level_pack.levels.append(level1)
 

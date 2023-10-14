@@ -2,6 +2,7 @@
 Methods for encoding and decoding Chip's Challenge (CC) data to and from binary DAT files
 Created for the class Programming for Game Designers
 """
+
 import cc_classes
 
 CC_DAT_HEADER_CODE = b'\xAC\xAA\x02\x00'
@@ -287,3 +288,6 @@ def write_cc_level_pack_to_dat(cc_dat, dat_file):
         writer.write(cc_dat.level_count.to_bytes(2, cc_classes.BYTE_ORDER))
         for level in cc_dat.levels:
             write_level_to_dat(level, writer)
+
+
+
